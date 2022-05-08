@@ -31,3 +31,4 @@ module "ses_domain_example" {
 
 - arn
 - verification_token
+- domain
