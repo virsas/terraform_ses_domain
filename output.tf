@@ -4,3 +4,6 @@ output "arn" {
 output "verification_token" {
   value = aws_ses_domain_identity.domain.verification_token
 }
+output "domain" {
+  value = aws_ses_domain_identity.domain.domain
+}
