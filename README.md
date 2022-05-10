@@ -4,7 +4,7 @@ Terraform module to create SES domain identity
 
 ##  Dependencies
 
-- none
+- Route53 - <https://github.com/virsas/terraform_route53>
 
 ## Files
 
@@ -24,6 +24,7 @@ Terraform module to create SES domain identity
 module "ses_domain_example" {
   source = "github.com/virsas/terraform_ses_domain"
   domain = "example.org"
+  zone = module.route53_example_org.zone_id
 }
 ```
 
