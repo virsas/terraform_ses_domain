@@ -22,7 +22,7 @@ Terraform module to create SES domain identity
 # Module
 ##############
 module "ses_domain_example" {
-  source = "github.com/virsas/terraform_ses_domain"
+  source = "git::https://github.com/virsas/terraform_ses_domain.git?ref=v1.0.0"
   domain = "example.org"
   zone = module.route53_example_org.zone_id
 }
